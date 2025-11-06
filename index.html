@@ -121,7 +121,7 @@
       const pct = total ? Math.round((yes / total) * 1000)/10 : 0;
 
       const TARGET = 78;
-      const pctToTarget = Math.round((total / TARGET) * 100);
+      const pctToTarget = Math.round((total / TARGET) * 1000)/10;
       
       document.getElementById('total').textContent = `${total} / ${TARGET} (${pctToTarget}%)`;
       document.getElementById('yesCount').textContent = yes;
@@ -138,6 +138,7 @@
   </script>
 </body>
 </html>
+
 
 
 
